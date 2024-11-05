@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memoris.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo animate__animated animate__fadeInDown">
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <div class="logo-text">Fizz Yoshiaki</div>
+                </div>
+
+                <nav>
+                    
+                    <ul class="navlinks animate__animated animate__fadeInDown">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="biodata.html">BIODATA</a></li>
+                        <li><a href="memoris.html">MEMORIES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    <div class="toogle-btn animate__animated animate__fadeInDown">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="dropdown-menu animate__animated animate__fadeInDown">
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="biodata.html">BIODATA</a></li>
+                            <li><a href="memoris.html">MEMORIES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </div>
+                </nav>
+            </header>
+                <div class="container">
+                    <div class="card animate__animated animate__fadeInLeft">
+                        <div class="img">
+                            <img src="gf.jpg" alt="">
+                        </div>
+                        <h1>My Girlfriend</h1>
+                        <p>I can't define him anymore, I think she's so perfect, I love you more babe</p>
+                        <button><i class="fa-solid fa-image fa-bounce"></i><a href="fotogf.html">My Girl Friend</a><i class="fa-solid fa-arrow-right fa-shake"></i></i></button>
+                    </div>
+                    <div class="card animate__animated animate__fadeIn">
+                        <div class="img">
+                            <img src="kecil.jpg" alt="">
+                        </div>
+                        <h1>My Childhood</h1>
+                        <p>looking back at photos when i was a kid wondering where that happy,bright smiled kid went
+                        </p>
+                        <button><i class="fa-solid fa-image fa-bounce"></i><a href="fotoch.html">My Childhood</a><i class="fa-solid fa-arrow-right fa-shake"></i></button>
+                    </div>
+                    <div class="card animate__animated animate__fadeInRight">
+                        <div class="img">
+                            <img src="teman.jpg" alt="">
+                        </div>
+                        <h1>My Friend</h1>
+                        <p>A place where I can be completely accepted, a place to exchange happy and sad stories</p>
+                        <button><i class="fa-solid fa-image fa-bounce"></i><a href="fotofr.html">My Friend</a><i class="fa-solid fa-arrow-right fa-shake"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toogle-btn')
+        const toggleBtnIcon = document.querySelector('.toogle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

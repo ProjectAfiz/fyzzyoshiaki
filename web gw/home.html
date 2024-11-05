@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Web Hafiz</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="hader logo animate__animated animate__fadeInDown">
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <div class="logo-text">Fizz Yoshiaki</div>
+                </div>
+
+                <nav>
+                    <ul class="navlinks animate__animated animate__fadeInDown">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="biodata.html">BIODATA</a></li>
+                        <li><a href="memoris.html">MEMORIES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <div class="toogle-btn animate__animated animate__fadeInDown">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="dropdown-menu animate__animated animate__fadeInDown">
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="biodata.html">BIODATA</a></li>
+                            <li><a href="memoris.html">MEMORIES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </div>
+                </nav>
+            </header>
+            <div class="container animate__animated animate__jackInTheBox">
+                <div class="hero-pic">
+                    <img src="logo.webp" alt="">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm<span class="input">Student</span></h5>
+                    <h1>Fizz Yoshiaki</h1>
+                    <p>Halo! saya Fizz Yoshiaki, nama asli ku Muhamad Hafiz,
+                        apakah ada keperluan kalian mengunjungi web ku ? jika ada bisa hubungi aku di CONTACT yaa....
+                         Salam Kenal <i class="fa-regular fa-hand-peace"></i></p>
+                         
+                    <div class="btn-group">
+                        <a href="https://www.mediafire.com/file/0nbjymednn6uqxo/home.html/file" class="btn active">Download CV</a>
+                        
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/hfz.yyy?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@fyzaru?_t=8fXifi7NoRu&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toogle-btn')
+        const toggleBtnIcon = document.querySelector('.toogle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biodata.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo animate__animated animate__fadeInDown">
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <div class="logo-text">Fizz Yoshiaki</div>
+                </div>
+
+                <nav>
+                    <div class="tooglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="navlinks animate__animated animate__fadeInDown">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="biodata.html">BIODATA</a></li>
+                        <li><a href="memoris.html">MEMORIES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <div class="toogle-btn animate__animated animate__fadeInDown">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="dropdown-menu animate__animated animate__fadeInDown">
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="biodata.html">BIODATA</a></li>
+                            <li><a href="memoris.html">MEMORIES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </div>
+                </nav>
+            </header>
+            <div class="container animate__animated animate__zoomIn">
+                <div class="about">
+                    <h1>ABOUT ME</h1>
+                    <div class="isiabout">
+                        <p>Saya <span>Muhamad Hafiz</span>, saya pelajar yang berjurusan di bidang Teknik Komputer Jaringan,
+                            hobi saya bermain game, mendengarkan musik, menonton film, belajar coding, night ride,
+                            saya bercita - cita menjadi <span>Full Stack Developer</span> dan <span>IT Support</span></p>
+                    </div>                    
+                </div>
+                <div class="visi">
+                    <h1>VISI</h1>
+
+                    <div class="isivisi">
+                        <p>Visi saya kedepannya adalah menjadi pribadi yang bisa berguna bagi semua orang. 
+                            Menjadi seorang yang sangat profesional dibidang <span>IT dan Software Engineer</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="misi">
+                    <h1>MISI</h1>
+
+                    <div class="isimisi">
+                        <p>Misi saya adalah mempelajari <span>skill - skill baru yang ingin saya kuasai</span> dan selalu <span>konsisten</span>, 
+                            semangat, pantang menyerah, dan melakukan kegiatan yang <span>bermanfaat bagi semua orang</span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toogle-btn')
+        const toggleBtnIcon = document.querySelector('.toogle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
